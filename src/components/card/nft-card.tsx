@@ -1,5 +1,15 @@
+interface NftCardProp {
+     nft: {
+          image: string;
+          name: string;
+          mood: string;
+     };
+     flipMood: () => void;
+     isLoading: boolean;
+}
 
-function NftCard({ nft, flipMood, isLoading }) {
+
+function NftCard({ nft, flipMood, isLoading }: NftCardProp) {
      return (
           <div className="min-h-screen flex flex-col items-center justify-center">
 
